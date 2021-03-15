@@ -1,9 +1,16 @@
+import React from 'react';
+
+import Header from "../src/components/header/header.componet";
+import LandingPage from './pages/landingpage/landingpage.component';
+
 import "./App.css";
+
 
 function App() {
   return (
     <div className="App">
-      <h1 className="font-bold text-red-400 ">Hello world</h1>
+      <Header />
+      <LandingPage />
     </div>
   );
 }

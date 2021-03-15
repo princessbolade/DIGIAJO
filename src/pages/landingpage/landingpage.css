@@ -1,0 +1,30 @@
+.body {
+  width: 100%;
+}
+
+.landingpage {
+  background-color: #0c266d;
+  height: 80vh;
+  color: aliceblue;
+  padding: 250px 400px;
+}
+.landingheader {
+  color: aliceblue;
+  font-size: xx-large;
+  text-align: left;
+}
+.landingtext {
+  color: lightblue;
+  font-size: large;
+  text-align: left;
+  padding-top: 20px;
+}
+.getstartedbutton {
+  background-color: blue;
+  border: none;
+  padding: 15px 32px;
+  margin: 25px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-left: -950px;
+}
