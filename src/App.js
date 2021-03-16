@@ -1,16 +1,18 @@
-import React from 'react';
+import React from "react";
+import { Switch, Route } from "react-router-dom";
 
-import Header from "../src/components/header/header.componet";
-import LandingPage from './pages/landingpage/landingpage.component';
+import LandingPage from "./pages/LandingPage/landingpage.component";
+import Header from "./components/header/header.component";
 
 import "./App.css";
-
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <LandingPage />
+      <Switch>
+        <Route exact path="/" component={LandingPage} />
+      </Switch>
     </div>
   );
 }
