@@ -1,7 +1,7 @@
 import React from "react";
 const NavBar = () => (
   <div>
-    <ul class="flex mr-20 pt-8">
+    <ul class="flex mr-20 pt-4">
       <li class="ml-24">
         <div class="flex items-center justify-end">
           <div class="w-10 border-b border-solid border-blue-500"></div>
