@@ -1,7 +1,8 @@
 import React from 'react';
+import { Route, Switch } from "react-router-dom";
 
-import Header from "../src/components/header/header.componet";
 import LandingPage from './pages/landingpage/landingpage.component';
+import AboutUs from './pages/aboutus/aboutus.component'
 
 import "./App.css";
 
@@ -9,8 +10,10 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <Header />
-      <LandingPage />
+      <Switch>
+        <Route exact path="/" component={LandingPage} />
+        <Route exact path="/aboutus" component={AboutUs} />
+      </Switch>
     </div>
   );
 }
