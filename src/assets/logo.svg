@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" id="svg2816" viewBox="0 0 64 64" version="1.1">
+  <defs id="defs2818">
+    <filter id="filter3695">
+      <feGaussianBlur id="feGaussianBlur3697" stdDeviation="0.57788337"/>
+    </filter>
+    <filter id="filter3768">
+      <feGaussianBlur id="feGaussianBlur3770" stdDeviation="0.21719191"/>
+    </filter>
+    <linearGradient id="linearGradient3778" x1="34" gradientUnits="userSpaceOnUse" y1="11" gradientTransform="translate(2,1)" x2="30.089" y2="59.773">
+      <stop id="stop3774" stop-color="#06c" offset="0"/>
+      <stop id="stop3776" stop-color="#0083d7" offset="1"/>
+    </linearGradient>
+  </defs>
+  <g id="layer1">
+    <path id="path3689" d="m4.0508 59.887c0.6539-1.7982 0-31.714 0-31.714l-4.2503 3.9234v-9.4815l3.5964-3.2695-0.16348-17.819 6.1255-0.086525 0.25 13.165 17.819-15.367 27.137 23.213v8.8276l-3.106-2.1252v30.897l-47.408-0.16347z" transform="matrix(1.0066 0 0 .96855 3.8531 3.9324)" filter="url(#filter3695)" stroke-width="0" fill="#111c32"/>
+    <path id="path2840" stroke="#294583" stroke-width=".79393" fill="url(#linearGradient3778)" d="m10.408 60.228c0.61292-1.6332 0-28.804 0-28.804l-3.9839 3.5633v-8.6114l3.371-2.9694-0.15323-16.184 5.7416-0.07858 0.23433 11.956 16.702-13.956 25.436 21.083v8.0175l-2.9113-1.9301v28.061l-44.436-0.14847z"/>
+    <rect id="rect3727" opacity=".01" fill-rule="evenodd" ry="1.013" height="64" width="64" y="2" x="196" stroke-width="0" fill="#090"/>
+    <text id="text3756" font-size="36.595px" xml:space="preserve" transform="matrix(1.2674 0 0 1.2674 -8.2877 -9.6545)" line-height="100%" filter="url(#filter3768)" y="46.180614" x="22.062927" font-family="Bodoni MT" fill="#003399">
+      <tspan id="tspan3758" y="46.180614" x="22.062927">$</tspan>
+    </text>
+    <text id="text3752" font-size="46.381px" xml:space="preserve" line-height="100%" y="52.143658" x="21.408096" font-family="Bodoni MT" fill="#deffff">
+      <tspan id="tspan3754" y="52.143658" x="21.408096">$</tspan>
+    </text>
+  </g>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+        <dc:publisher>
+          <cc:Agent rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>
