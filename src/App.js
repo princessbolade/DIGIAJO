@@ -5,6 +5,7 @@ import LandingPage from "./pages/LandingPage/landingpage.component";
 import Header from "./components/header/header.component";
 import AboutUs from "./pages/aboutus/aboutus.component";
 import SignIn from "./components/sign-in/sign-in.component";
+import SignUp from "./components/sign-up/sign-up.component";
 
 import "./App.css";
 
@@ -16,6 +17,7 @@ function App() {
         <Route exact path="/" component={LandingPage} />
         <Route exact path="/aboutus" component={AboutUs} />
         <Route exact path="/signin" component={SignIn} />
+        <Route exact path="/signup" component={SignUp} />
       </Switch>
     </div>
   );
