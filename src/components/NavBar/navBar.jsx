@@ -31,6 +31,13 @@ const NavBar = () => (
         </div>
         <div class="text-right">CONTACT US</div>
       </li>
+      <li class="ml-24">
+        <div class="flex items-center justify-end">
+          <div class="w-10 border-b border-solid border-blue-500"></div>
+          <h1 class="ml-3 text-3xl font-bold">5</h1>
+        </div>
+        <div class="text-right">SIGN IN</div>
+      </li>
     </ul>
   </div>
 );
