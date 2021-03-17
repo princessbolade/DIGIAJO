@@ -1,14 +1,12 @@
 import React from "react";
-import SignInImg from "../../assets/signIn.png";
+import SignInImg from "../../assets/signIn2.png";
 
 const SignIn = () => (
   <div className="lg:flex">
     <div className="lg:w-1/2 xl:max-w-screen-sm overflow-hidden">
       <div class="py-12 bg-gray-200 lg:bg-white flex justify-center lg:justify-start lg:px-12">
         <div class="cursor-pointer flex items-center"> </div>
-        <div class="text-2xl uppercase text-blue-900 tracking-wide ml-2 font-semibold">
-          DigiAjo
-        </div>
+        <div class="text-2xl uppercase text-blue-900 tracking-wide ml-2 font-semibold"></div>
       </div>
       <div className="mt-10 px-12 sm:px-24 md:px-48 lg:px-12 lg:mt-16 xl:px-24 xl:max-w-2xl">
         <h2 className="text-center text-4xl text-blue-900 font-semibold lg:text-left xl:text-5xl xl:text-bold">
@@ -37,7 +35,7 @@ const SignIn = () => (
               </div>
               <input
                 className=" w-full text-lg py-2 border-b border-gray-300 focus:outline-none focus:border-blue-900"
-                type=""
+                type="password"
                 placeholder="Enter your password"
               />
             </div>
@@ -49,14 +47,17 @@ const SignIn = () => (
           </form>
           <div className="mt-12 text-sm font-display font-semibold text-gray-400 text-center">
             Don't have an account?
-            <a className="cursor-pointer text-blue-900">SIGN UP</a>
+            <a className="cursor-pointer text-blue-900"> SIGN UP </a>
           </div>
         </div>
       </div>
     </div>
     <div
-      className=" lg:flex-items-center justify-center bg-gray-200 flex-1 "
-      style={{ backgroundImage: `url(${SignInImg})` }}
+      className=" lg:flex-items-center justify-center flex-1 "
+      style={{
+        backgroundImage: `url(${SignInImg})`,
+        backgroundRepeat: "no-repeat",
+      }}
     >
       <div className="max-w-xs transform duration-200 hover:scale-110 cursor-pointer">
         {/* <img src={SignInImg} alt="" style={{ width: "500px" }} /> */}
