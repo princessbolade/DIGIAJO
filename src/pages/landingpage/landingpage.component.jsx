@@ -1,6 +1,7 @@
 import React from "react";
 import Dottedimg from "../../assets/dottedImg.svg";
 import Typical from "react-typical";
+import { Link } from "react-router-dom";
 
 const LandingPage = () => (
   <div
@@ -66,13 +67,14 @@ const LandingPage = () => (
         <br /> Group members will contribute funds into a pool regularly,
         <br /> and take turns withdrawing funds from the pool.
       </h4>
-
-      <button
-        className="bg-transparent hover:bg-blue-900 text-blue-900 font-semibold hover:text-white py-2 px-4 border border-blue-900 hover:border-transparent rounded"
-        style={{ marginLeft: "300px", marginTop: "20px" }}
-      >
-        GET STARTED
-      </button>
+      <Link to="/signup">
+        <button
+          className="bg-transparent hover:bg-blue-900 text-blue-900 font-semibold hover:text-white py-2 px-4 border border-blue-900 hover:border-transparent rounded"
+          style={{ marginLeft: "300px", marginTop: "20px" }}
+        >
+          GET STARTED
+        </button>
+      </Link>
 
       <img
         className="text-blue-900 align-baseline mt-2"
