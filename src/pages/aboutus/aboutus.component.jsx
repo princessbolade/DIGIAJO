@@ -2,8 +2,6 @@ import React from "react";
 
 import AboutusImg from "../../assets/aboutus2.svg";
 
-// import "./aboutus.styles.css";
-
 const AboutUs = () => (
   <div className="">
     <h1
