@@ -37,15 +37,21 @@ const AboutUs = () => (
       />
       <div className="mb-2">
         <p
-          className="bg-gray-300 h-70 mt-48 text-blue-800 p-7 text-2xl rounded-sm shadow-sm"
+          className="bg-gray-300 h-70 mt-40 text-blue-800 p-7 text-2xl rounded-sm shadow-sm"
           style={{
             textAlign: "justify",
           }}
         >
-          Due to our ability to operate digitally, our users are geared up to
-          save towards goals easily using DIGIAJO.
-          <br /> DIGIAJO offers a customized digital peer-to-peer saving
-          solution that captures;
+          <p className="mb-0">
+            {" "}
+            Due to our ability to operate digitally, our users are geared up to
+            save towards goals easily using DIGIAJO.
+          </p>
+          <br />{" "}
+          <p className="mb-2">
+            DIGIAJO offers a customized digital peer-to-peer saving solution
+            that captures;
+          </p>
           <ul className=" ">
             <li className="mb-2">
               Immediate disbursement of funds amongst peers saving together.
