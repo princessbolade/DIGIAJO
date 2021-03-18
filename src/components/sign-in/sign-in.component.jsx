@@ -8,7 +8,7 @@ const SignIn = () => (
         <div class="cursor-pointer flex items-center"> </div>
         <div class="text-2xl uppercase text-blue-900 tracking-wide ml-2 font-semibold"></div>
       </div>
-      <div className="mt-10 px-12 sm:px-24 md:px-48 lg:px-12 lg:mt-16 xl:px-24 xl:max-w-2xl">
+      <div className="mt-10 ml-20 px-12 sm:px-24 md:px-48 lg:px-12 lg:mt-16 xl:px-24 xl:max-w-2xl">
         <h2 className="text-center text-4xl text-blue-900 font-semibold lg:text-left xl:text-5xl xl:text-bold">
           SIGN IN
         </h2>
@@ -47,16 +47,21 @@ const SignIn = () => (
           </form>
           <div className="mt-12 text-sm font-display font-semibold text-gray-400 text-center">
             Don't have an account?
+            <a className="ml-2 cursor-pointer text-blue-900">SIGN UP</a>
             <a className="cursor-pointer text-blue-900"> SIGN UP </a>
           </div>
         </div>
       </div>
     </div>
     <div
-      className=" lg:flex-items-center justify-center flex-1 "
+      className=" lg:flex-items-center justify-center bg-white flex-1 "
       style={{
         backgroundImage: `url(${SignInImg})`,
+        backgroundSize: "contain",
+        backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
+        marginBottom: "20px",
+        marginTop: "20px"
       }}
     >
       <div className="max-w-xs transform duration-200 hover:scale-110 cursor-pointer">
