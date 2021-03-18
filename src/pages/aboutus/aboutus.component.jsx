@@ -18,24 +18,26 @@ const AboutUs = () => (
       style={{
         display: "grid",
         gridTemplateColumns: "1fr 1fr",
+        gridGap: "150px",
         maxWidth: "70%",
         margin: "0 auto",
       }}
     >
       <img
-        className=""
+        className="animate__animated animate__slideInLeft"
         src={AboutusImg}
         alt=""
         style={{
           width: "480px",
-          marginTop: "150px",
+          height: "500px",
+          marginTop: "35px",
           marginLeft: "200px",
           paddingRight: "20px",
         }}
       />
-      <div className="mb-2">
+      <div className="mb-2 animate__animated animate__slideInRight">
         <p
-          className="bg-gray-300 h-70 mt-40 text-blue-800 p-7 text-2xl rounded-sm shadow-sm"
+          className="bg-gray-100 h-70 mt-40 text-blue-800 p-7 text-2xl rounded-sm shadow-sm"
           style={{
             textAlign: "justify",
           }}
