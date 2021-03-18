@@ -62,9 +62,7 @@ const SignIn = () => (
         marginTop: "20px",
       }}
     >
-      <div className="max-w-xs transform duration-200 hover:scale-110 cursor-pointer">
-        {/* <img src={SignInImg} alt="" style={{ width: "500px" }} /> */}
-      </div>
+      <div className="max-w-xs transform duration-200 hover:scale-110 cursor-pointer"></div>
     </div>
   </div>
 );
