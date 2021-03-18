@@ -7,6 +7,7 @@ import AboutUs from "./pages/aboutus/aboutus.component";
 import SignIn from "./components/sign-in/sign-in.component";
 import SignUp from "./components/sign-up/sign-up.component";
 import Contact from "./pages/contact/contact.component";
+import Testimonial from "./components/testimonial/testimonial.component";
 
 import "./App.css";
 
@@ -20,6 +21,7 @@ function App() {
         <Route exact path="/signin" component={SignIn} />
         <Route exact path="/signup" component={SignUp} />
         <Route exact path="/contact" component={Contact} />
+        <Route exact path="/testimonial" component={Testimonial} />
       </Switch>
     </div>
   );
