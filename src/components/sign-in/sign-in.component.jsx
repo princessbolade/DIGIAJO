@@ -1,5 +1,6 @@
 import React from "react";
-import SignInImg from "../../assets/signIn2.png";
+import SignInImg from "../../assets/signIn.png";
+import { Link } from "react-router-dom";
 
 const SignIn = () => (
   <div className="lg:flex">
@@ -47,8 +48,10 @@ const SignIn = () => (
           </form>
           <div className="mt-12 text-sm font-display font-semibold text-gray-400 text-center">
             Don't have an account?
-            <a className="ml-2 cursor-pointer text-blue-900">SIGN UP</a>
-            <a className="cursor-pointer text-blue-900"> SIGN UP </a>
+            <Link to="/signup">
+              {" "}
+              <a className="ml-2 cursor-pointer text-blue-900">SIGN UP</a>{" "}
+            </Link>
           </div>
         </div>
       </div>
@@ -61,11 +64,9 @@ const SignIn = () => (
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         marginBottom: "20px",
-        marginTop: "20px"
+        marginTop: "20px",
       }}
-    >
-      <div className="max-w-xs transform duration-200 hover:scale-110 cursor-pointer"></div>
-    </div>
+    ></div>
   </div>
 );
 
