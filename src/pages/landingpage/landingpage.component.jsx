@@ -2,6 +2,7 @@ import React from "react";
 import Dottedimg from "../../assets/dottedImg.svg";
 import SimpleSlider from "../../components/carousel/carousel";
 import { Program } from "../../components/section2/section2";
+import Footer from "../../pages/Footer/footer";
 import Typical from "react-typical";
 import { Link } from "react-router-dom";
 
@@ -94,7 +95,7 @@ const LandingPage = () => (
         </div>
       </div>
     </div>
-    <div className="mt-56 text-center">
+    <div className="mt-60 text-center">
       <h2 className="text-3xl tracking-wide leading-relaxed text-blue-900">
         Explore the groups and choose the perfect plan for your future needs
       </h2>
@@ -106,6 +107,7 @@ const LandingPage = () => (
     </div>
     <Program />
     <SimpleSlider />
+    <Footer />
   </>
 );
 
