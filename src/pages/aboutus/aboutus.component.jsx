@@ -30,14 +30,14 @@ const AboutUs = () => (
         style={{
           width: "480px",
           height: "500px",
-          marginTop: "35px",
+          marginTop: "55px",
           marginLeft: "200px",
           paddingRight: "20px",
         }}
       />
       <div className="mb-2 animate__animated animate__slideInRight">
         <p
-          className="bg-gray-100 h-70 mt-40 text-blue-800 p-7 text-2xl rounded-sm shadow-sm"
+          className="leading-relaxed h-70 mt-40 text-blue-800 p-7 text-2xl rounded-sm shadow-sm"
           style={{
             textAlign: "justify",
           }}
