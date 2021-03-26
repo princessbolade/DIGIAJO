@@ -9,23 +9,26 @@ import { Link } from "react-router-dom";
 
 const LandingPage = () => (
   <>
-    <div>
+    <div
+      style={{
+        width: "100vw",
+        position: "relative",
+      }}
+    >
       <div
-        className="container items-center ml-28 "
         style={{
           zIndex: "0",
           height: "50%",
-          width: "100vw",
           position: "relative",
         }}
+        className="container items-center md:ml-28 "
       >
         <div
-          className="text-2xl bg-blue-900 rounded-2xl"
+          className="text-2xl bg-blue-900 rounded-2xl left-0 md:left-16"
           style={{
             height: "550px",
-            width: "900px",
+            maxWidth: "900px",
             top: "40px",
-            left: "70px",
             position: "relative",
             zIndex: "1",
             overflow: "hidden",
@@ -52,7 +55,7 @@ const LandingPage = () => (
           </h1>
         </div>
         <div
-          className="bg-gray-300 text-lg rounded-2xl"
+          className="bg-gray-300 text-lg rounded-2xl hidden md:block"
           style={{
             position: "absolute",
             zIndex: "2",
