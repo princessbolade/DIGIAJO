@@ -51,7 +51,7 @@ const NavBar = () => {
                         <div className="w-10 border-b border-solid border-blue-500"></div>
                         <h1 className="ml-3 text-3xl font-bold">4</h1>
                       </div>
-                      <Link to="/contactus" className="text-right">
+                      <Link to="/contact" className="text-right">
                         CONTACT US
                       </Link>
                     </div>
