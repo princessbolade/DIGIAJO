@@ -3,6 +3,36 @@ import SignInImg from "../../assets/signIn.png";
 import { Link } from "react-router-dom";
 
 const SignIn = () => {
+  let [account, setAccount] = useState({
+    password: "",
+    email: "",
+  });
+
+  let handleChange = (e) => {
+    let name = e.target.name;
+    let value = e.target.value;
+    account[name] = value;
+    setAccount(account);
+  };
+
+  let save = (e) => {
+    e.preventDefault();
+
+    fetch("http://996af468463c.ngrok.io/user/login", {
+      method: "POST",
+      body: JSON.stringify({
+        password: account.password,
+        email: account.email,
+      }),
+    })
+      .then((response) => response.json())
+      .then((response) => {
+        console.log(response);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
   const [showPassword, setShowPassword] = useState(false);
   return (
     <div className="lg:flex">
@@ -16,13 +46,15 @@ const SignIn = () => {
             SIGN IN
           </h2>
           <div className="mt-12">
-            <form>
+            <form onSubmit={save}>
               <div className="text-sm font-bold text-gray-700 tracking-wide">
                 Email Address
               </div>
               <input
                 className="w-full text-lg py-2 border-b border-gray-300 focus:outline-none focus:border-blue-900"
                 type=""
+                name="email"
+                onChange={handleChange}
                 placeholder="person@gmail.com"
               />
               <div className="mt-8">
@@ -41,6 +73,8 @@ const SignIn = () => {
                     className=" w-full text-lg py-2 border-b border-gray-300 focus:outline-none focus:border-blue-900"
                     type={`${showPassword ? "text" : "password"}`}
                     placeholder="Enter your password"
+                    name="password"
+                    onChange={handleChange}
                   />
                   <span
                     onClick={() => setShowPassword((prev) => !prev)}
@@ -51,7 +85,10 @@ const SignIn = () => {
                 </div>
               </div>
               <div className="mt-10">
-                <button className="bg-blue-900 text-gray-100 p-4 w-full rounded-full tracking-wide font-semibold focus:outline-none focus:shadow-outline hover:bg-blue-700">
+                <button
+                  type="submit"
+                  className="bg-blue-900 text-gray-100 p-4 w-full rounded-full tracking-wide font-semibold focus:outline-none focus:shadow-outline hover:bg-blue-700"
+                >
                   Sign In
                 </button>
               </div>
