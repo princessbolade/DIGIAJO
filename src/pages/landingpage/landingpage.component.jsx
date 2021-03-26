@@ -1,8 +1,9 @@
 import React from "react";
 import Dottedimg from "../../assets/dottedImg.svg";
 import SimpleSlider from "../../components/carousel/carousel";
-import { Program } from "../../components/section2/section2";
+import Section2 from "../../components/section2/section2";
 import Footer from "../../pages/Footer/footer";
+import Testimonial from "../../components/testimonial/testimonial.component";
 import Typical from "react-typical";
 import { Link } from "react-router-dom";
 
@@ -105,8 +106,9 @@ const LandingPage = () => (
         save for the FUTURE.
       </h4>
     </div>
-    <Program />
+    <Section2 />
     <SimpleSlider />
+    <Testimonial />
     <Footer />
   </>
 );

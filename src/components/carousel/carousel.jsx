@@ -15,7 +15,7 @@ export default class SimpleSlider extends Component {
       slidesToScroll: 3,
     };
     return (
-      <div className=" text-blue-900 pt-10 pb-48">
+      <div className=" container text-blue-900 pt-10 pb-48">
         <h2 className="text-center font-bold text-3xl"> THE TRENDY GROUPS </h2>
         <Slider {...settings}>
           <div className="ml-20 mt-20 text-center">
