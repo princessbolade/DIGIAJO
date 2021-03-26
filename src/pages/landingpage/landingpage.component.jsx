@@ -1,30 +1,34 @@
 import React from "react";
 import Dottedimg from "../../assets/dottedImg.svg";
 import SimpleSlider from "../../components/carousel/carousel";
-import { Program } from "../../components/section2/section2";
+import Section2 from "../../components/section2/section2";
 import Footer from "../../pages/Footer/footer";
+import Testimonial from "../../components/testimonial/testimonial.component";
 import Typical from "react-typical";
 import { Link } from "react-router-dom";
 
 const LandingPage = () => (
   <>
-    <div>
+    <div
+      style={{
+        width: "100vw",
+        position: "relative",
+      }}
+    >
       <div
-        className="container items-center ml-28 "
         style={{
           zIndex: "0",
           height: "50%",
-          width: "100vw",
           position: "relative",
         }}
+        className="container items-center md:ml-28 "
       >
         <div
-          className="text-2xl bg-blue-900 rounded-2xl"
+          className="text-2xl bg-blue-900 rounded-2xl left-0 md:left-16"
           style={{
             height: "550px",
-            width: "900px",
+            maxWidth: "900px",
             top: "40px",
-            left: "70px",
             position: "relative",
             zIndex: "1",
             overflow: "hidden",
@@ -51,7 +55,7 @@ const LandingPage = () => (
           </h1>
         </div>
         <div
-          className="bg-gray-300 text-lg rounded-2xl"
+          className="bg-gray-300 text-lg rounded-2xl hidden md:block"
           style={{
             position: "absolute",
             zIndex: "2",
@@ -105,8 +109,9 @@ const LandingPage = () => (
         save for the FUTURE.
       </h4>
     </div>
-    <Program />
+    <Section2 />
     <SimpleSlider />
+    <Testimonial />
     <Footer />
   </>
 );
