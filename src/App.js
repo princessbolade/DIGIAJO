@@ -9,6 +9,7 @@ import SignUp from "./components/sign-up/sign-up.component";
 import Contact from "./pages/contact/contact.component";
 import Testimonial from "./components/testimonial/testimonial.component";
 import Faq from "./pages/FAQ/FAQ";
+import Dashboard from "./pages/dashboard/dashboard.component";
 
 import "./App.css";
 
@@ -24,6 +25,7 @@ function App() {
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/testimonial" component={Testimonial} />
         <Route exact path="/faq" component={Faq} />
+        <Route exact path="/dashboard" component={Dashboard} />
       </Switch>
     </div>
   );
