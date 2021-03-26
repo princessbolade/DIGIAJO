@@ -2,12 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Section2 = () => (
-  <div style={{ margin: "0px", padding: "0px" }}>
-    <div className="container grid grid-cols-3 gap-2 justify-center">
-      <div
-        className="md:col-span-1"
-        style={{ marginLeft: "150px", marginTop: "50px" }}
-      >
+  <div className="px-6" style={{ margin: "0px" }}>
+    <div className="container md:grid grid-cols-3 gap-2 justify-center">
+      <div className="md:col-span-1 md:ml-36" style={{ marginTop: "50px" }}>
         <p
           className="md:text-3.5xl font-bold max-w-xl text-left mb-4 text-main"
           style={{ fontSize: "2.125rem" }}
@@ -31,10 +28,7 @@ const Section2 = () => (
           </button>
         </Link>
       </div>
-      <div
-        className="md:col-span-1"
-        style={{ marginTop: "50px", marginLeft: "177px" }}
-      >
+      <div className="md:col-span-1 md:ml-44" style={{ marginTop: "50px" }}>
         <p
           className="md:text-3.5xl font-bold max-w-xl text-left mb-4 text-main"
           style={{ fontSize: "2.125rem" }}
@@ -49,10 +43,7 @@ const Section2 = () => (
           interface that allows you navigate the website with ease.
         </p>
       </div>
-      <div
-        className="md:col-span-1"
-        style={{ marginTop: "50px", marginLeft: "180px" }}
-      >
+      <div className="md:col-span-1 md:ml-44" style={{ marginTop: "50px" }}>
         <p
           className="md:text-3.5xl font-bold max-w-xl text-left mb-4 text-main"
           style={{ fontSize: "2.125rem" }}
