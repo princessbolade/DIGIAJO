@@ -17,14 +17,16 @@ const SignIn = () => {
 
   let save = (e) => {
     e.preventDefault();
-
-    fetch("http://996af468463c.ngrok.io/user/login", {
+    const request = {
       method: "POST",
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         password: account.password,
         email: account.email,
       }),
-    })
+    };
+
+    fetch("https://d8d36b54107c.ngrok.io/user/login", request)
       .then((response) => response.json())
       .then((response) => {
         console.log(response);

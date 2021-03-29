@@ -1,12 +1,12 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 
-import LandingPage from "./pages/LandingPage/landingpage.component";
+import LandingPage from "./pages/landingpage/landingpage.component";
 import NavBar from "./components/NavBar/navBar";
 
 // import LandingPage from "./pages/landingpage/landingpage.component";
 // import Header from "./components/header/header.component";
-  
+
 import AboutUs from "./pages/aboutus/aboutus.component";
 import SignIn from "./components/sign-in/sign-in.component";
 import SignUp from "./components/sign-up/sign-up.component";
