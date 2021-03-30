@@ -171,5 +171,24 @@ const NavBar = () => {
     </>
   );
 };
-
+      <li class="ml-24">
+        <div class="flex items-center justify-end">
+          <div class="w-10 border-b border-solid border-blue-500"></div>
+          <h1 class="ml-3 text-3xl font-bold">4</h1>
+        </div>
+        <Link to="contact" class="flex items-center justify-end">
+          <div class="text-right">CONTACT US</div>
+        </Link>
+      </li>
+      <li class="ml-24">
+        <div class="flex items-center justify-end">
+          <div class="w-10 border-b border-solid border-blue-500"></div>
+          <h1 class="ml-3 text-3xl font-bold">5</h1>
+        </div>
+        <Link to="/signin" class="text-right">
+          SIGN IN
+        </Link>
+      </li>
+    </ul>
+  </div>
 export default NavBar;
