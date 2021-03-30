@@ -17,14 +17,16 @@ const SignIn = () => {
 
   let save = (e) => {
     e.preventDefault();
-
-    fetch("http://996af468463c.ngrok.io/user/login", {
+    const request = {
       method: "POST",
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         password: account.password,
         email: account.email,
       }),
-    })
+    };
+
+    fetch("https://d8d36b54107c.ngrok.io/user/login", request)
       .then((response) => response.json())
       .then((response) => {
         console.log(response);
@@ -36,7 +38,10 @@ const SignIn = () => {
   const [showPassword, setShowPassword] = useState(false);
   return (
     <div className="lg:flex">
-      <div className="lg:w-1/2 xl:max-w-screen-sm overflow-hidden">
+      <div
+        className="lg:w-1/2 xl:max-w-screen-sm overflow-hidden"
+        // style={{ paddingTop: "100px" }}
+      >
         <div class="py-12 bg-gray-200 lg:bg-white flex justify-center lg:justify-start lg:px-12">
           <div class="cursor-pointer flex items-center"> </div>
           <div class="text-2xl uppercase text-blue-900 tracking-wide ml-2 font-semibold"></div>

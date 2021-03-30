@@ -6,7 +6,12 @@ import { Link } from "react-router-dom";
 
 const Contact = () => (
   <div
-    style={{ display: "flex", justifyContent: "center", alignItems: "center" }}
+    style={{
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      paddingTop: "170px",
+    }}
   >
     <div
       style={{

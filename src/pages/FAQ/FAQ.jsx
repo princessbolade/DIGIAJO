@@ -1,7 +1,7 @@
 import React from "react";
 
 const Faq = () => (
-  <div>
+  <div style={{ paddingTop: "80px" }}>
     <section className="text-gray-700 mt-20">
       <div className="container px-5 py-24 mx-auto">
         <div className="text-center mb-20">
