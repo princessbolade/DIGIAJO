@@ -5,7 +5,7 @@ import AboutusImg from "../../assets/aboutus2.svg";
 const AboutUs = () => (
   <div className="">
     <h1
-      className="text-blue-800 text-4xl items-center"
+      className="text-blue-800 mt-10 text-4xl items-center"
       style={{
         textAlign: "center",
         fontSize: "3rem",
@@ -15,25 +15,17 @@ const AboutUs = () => (
       ABOUT US.
     </h1>
     <div
+      className="md:grid md:grid-cols-2"
       style={{
-        display: "grid",
-        gridTemplateColumns: "1fr 1fr",
         gridGap: "150px",
         maxWidth: "70%",
         margin: "0 auto",
       }}
     >
       <img
-        className="animate__animated animate__slideInLeft"
+        className="animate__animated animate__slideInLeft md:max-w-lg md:max-h-96 md:mt-36 md:ml-56 pr-5"
         src={AboutusImg}
         alt=""
-        style={{
-          width: "480px",
-          height: "500px",
-          marginTop: "55px",
-          marginLeft: "200px",
-          paddingRight: "20px",
-        }}
       />
       <div className="mb-2 animate__animated animate__slideInRight">
         <p
