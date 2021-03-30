@@ -38,7 +38,10 @@ const SignIn = () => {
   const [showPassword, setShowPassword] = useState(false);
   return (
     <div className="lg:flex">
-      <div className="lg:w-1/2 xl:max-w-screen-sm overflow-hidden">
+      <div
+        className="lg:w-1/2 xl:max-w-screen-sm overflow-hidden"
+        // style={{ paddingTop: "100px" }}
+      >
         <div class="py-12 bg-gray-200 lg:bg-white flex justify-center lg:justify-start lg:px-12">
           <div class="cursor-pointer flex items-center"> </div>
           <div class="text-2xl uppercase text-blue-900 tracking-wide ml-2 font-semibold"></div>

@@ -7,7 +7,14 @@ const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-      <div>
+      <div
+        style={{
+          zIndex: " 5",
+          width: "100%",
+          position: "fixed",
+          top: 0,
+        }}
+      >
         <nav className="bg-white py-10 shadow-md">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-between h-16">
