@@ -7,7 +7,14 @@ const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-      <div>
+      <div
+        style={{
+          zIndex: " 5",
+          width: "100%",
+          position: "fixed",
+          top: 0,
+        }}
+      >
         <nav className="bg-white py-10 shadow-md">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-between h-16">
@@ -171,24 +178,26 @@ const NavBar = () => {
     </>
   );
 };
-      <li class="ml-24">
-        <div class="flex items-center justify-end">
-          <div class="w-10 border-b border-solid border-blue-500"></div>
-          <h1 class="ml-3 text-3xl font-bold">4</h1>
-        </div>
-        <Link to="contact" class="flex items-center justify-end">
-          <div class="text-right">CONTACT US</div>
-        </Link>
-      </li>
-      <li class="ml-24">
-        <div class="flex items-center justify-end">
-          <div class="w-10 border-b border-solid border-blue-500"></div>
-          <h1 class="ml-3 text-3xl font-bold">5</h1>
-        </div>
-        <Link to="/signin" class="text-right">
-          SIGN IN
-        </Link>
-      </li>
-    </ul>
-  </div>
+<div>
+  <ul>
+    <li class="ml-24">
+      <div class="flex items-center justify-end">
+        <div class="w-10 border-b border-solid border-blue-500"></div>
+        <h1 class="ml-3 text-3xl font-bold">4</h1>
+      </div>
+      <Link to="contact" class="flex items-center justify-end">
+        <div class="text-right">CONTACT US</div>
+      </Link>
+    </li>
+    <li class="ml-24">
+      <div class="flex items-center justify-end">
+        <div class="w-10 border-b border-solid border-blue-500"></div>
+        <h1 class="ml-3 text-3xl font-bold">5</h1>
+      </div>
+      <Link to="/signin" class="text-right">
+        SIGN IN
+      </Link>
+    </li>
+  </ul>
+</div>;
 export default NavBar;

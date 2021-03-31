@@ -13,6 +13,7 @@ const LandingPage = () => (
       style={{
         width: "100vw",
         position: "relative",
+        paddingTop: "170px",
       }}
     >
       <div

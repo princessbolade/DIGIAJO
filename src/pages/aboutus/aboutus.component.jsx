@@ -3,7 +3,7 @@ import React from "react";
 import AboutusImg from "../../assets/aboutus2.svg";
 
 const AboutUs = () => (
-  <div className="">
+  <div className="" style={{ paddingTop: "180px" }}>
     <h1
       className="text-blue-800 mt-10 text-4xl items-center"
       style={{
